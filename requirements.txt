@@ -1,0 +1,12 @@
+numpy
+pandas
+tqdm
+rank-bm25
+sentence-transformers
+transformers
+nltk
+datasets
+huggingface-hub
+scikit-learn
+scipy
+matplotlib
