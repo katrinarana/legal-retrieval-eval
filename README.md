@@ -25,23 +25,23 @@ Research code and experiment tracking for an evaluation of Indian legal preceden
 - `results/`: experiment outputs and tables (small, non-sensitive files only).
 - `reports/`: research notes and report material.
 
+## Getting started
+
+Use Google Colab with Google Drive for datasets and generated embeddings.
+
+1. Open `notebooks/00_environment_setup.ipynb` in Google Colab.
+2. Run its cells from top to bottom.
+3. Keep dataset files in Google Drive or another approved storage location.
+4. Do not commit private access tokens, credentials, large datasets or generated embedding arrays.
+
 ## Existing preliminary work
 
-The two original notebooks are retained:
+The original notebooks are retained:
 
-- `notebooks/01_setup.ipynb`: initial Google Drive setup and dependency checks.
+- `notebooks/01_setup.ipynb`: original environment setup experiment; retained for traceability. Use `00_environment_setup.ipynb` as the current setup notebook.
 - `notebooks/02_aila_retrieval_experiments.ipynb`: preliminary AILA experiments, including BM25, semantic chunking and diagnostics.
 
 AILA results are preliminary and must not be presented as IL-TUR results. The semantic notebook records query-length truncation diagnostics; its semantic evaluation should not be treated as final without correcting and re-running affected experiments.
-
-## Getting started
-
-The intended environment is Google Colab with Google Drive for datasets and generated embeddings.
-
-1. Open a notebook in `notebooks/`.
-2. Install dependencies from `requirements.txt`.
-3. Keep dataset files in Google Drive or another approved storage location.
-4. Never commit private access tokens, credentials, large datasets or generated embedding arrays.
 
 ## Data and access
 
@@ -55,8 +55,9 @@ Record dataset version and source, preprocessing choices, model name/version, ch
 
 - [x] Initial repository and preliminary AILA notebooks preserved
 - [x] Cleanup branch created
+- [x] Canonical environment setup notebook added
 - [ ] IL-TUR dataset verification
-- [ ] Reproducible environment and preprocessing
+- [ ] Reproducible preprocessing
 - [ ] BM25, semantic and issue-aware experiments
 - [ ] Faithfulness and stability evaluation
 - [ ] Prototype and final report
