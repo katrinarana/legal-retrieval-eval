@@ -1,25 +1,28 @@
 # Notebooks and execution order
 
+## Start here
+
+- `00_environment_setup.ipynb`: the canonical Google Colab setup notebook. Mounts Drive, creates the standard project folders, installs dependencies and checks the runtime.
+
 ## Preserved preliminary notebooks
 
-- `01_setup.ipynb`: original environment setup experiment. Kept unchanged for traceability.
-- `02_aila_retrieval_experiments.ipynb`: original AILA experiments. Kept unchanged; contains repeated setup and exploratory cells.
+- `01_setup.ipynb`: original setup experiment, retained unchanged for traceability. Do not use it as the current setup guide.
+- `02_aila_retrieval_experiments.ipynb`: original AILA experiments, retained unchanged. It contains exploratory and preliminary work, not the clean IL-TUR pipeline. Its semantic evaluation needs review because the notebook records query-length truncation diagnostics.
 
-These notebooks are historical/preliminary work, not the clean IL-TUR pipeline. Do not assume their outputs are final research results.
+AILA results must not be presented as IL-TUR results.
 
-## New research notebooks
+## Planned IL-TUR research sequence
 
-New IL-TUR notebooks will be added only after Phase 1 verifies the dataset's real structure and evaluation format. The planned sequence is:
+The following notebooks will be added after Phase 1 verifies the dataset's actual structure, query format, candidate judgments, relevance labels, annotations and licence:
 
-1. Environment setup
-2. IL-TUR dataset verification
-3. Data preprocessing
-4. BM25 baseline
-5. Semantic retrieval
-6. Issue-aware retrieval
-7. Explainability
-8. Faithfulness evaluation
-9. Stability evaluation
-10. Final comparison
+1. `01_iltur_dataset_verification.ipynb`
+2. `02_data_preprocessing.ipynb`
+3. `03_bm25_baseline.ipynb`
+4. `04_semantic_retrieval.ipynb`
+5. `05_issue_aware_retrieval.ipynb`
+6. `06_explainability.ipynb`
+7. `07_faithfulness_evaluation.ipynb`
+8. `08_stability_evaluation.ipynb`
+9. `09_comparison_and_analysis.ipynb`
 
-Each notebook should have a clear purpose, minimal repeated setup, documented inputs and saved outputs. Keep secrets out of notebook cells and outputs.
+Each notebook should have one main responsibility, minimal repeated setup, documented inputs and saved outputs. Keep secrets and restricted data out of notebook cells and outputs.
